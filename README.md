@@ -10,7 +10,7 @@ Here's a reference of which SwiftLint-Config version to use for a given SwiftLin
 |:--|:--|
 |SwiftLint 0.42.0|Latest|
 
-How to check
+You can check version as follows
 
 ```sh
 swiftlint version
@@ -18,11 +18,37 @@ swiftlint version
 
 ## Usage
 
+- Create `Run Script` and write aｓ follows
+
+```sh
+if which swiftlint >/dev/null; then
+  swiftlint autocorrect --format
+  swiftlint
+else
+  echo "SwiftLint does not exist, download from https://github.com/realm/SwiftLint"
+fi
+```
+
+![image](https://i.imgur.com/B31sNdl.png)
+
 Using a remote reference, your `.swiftlint.yml` could look like this:
 
 ```yaml
-parent_config: https://raw.githubusercontent.com/uhooi/SwiftLint-Config/v1.0.0/ikeh1024-base-swiftlint-config.yml
+# リモートに置かれた.ymlファイルの設定を使用する
+parent_config: https://raw.githubusercontent.com/pommdau/SwiftLint-Config/v1.0.0/ikeh1024-base-swiftlint-config.yml
+
+# 対象のファイル・フォルダ
+included:
+# デフォルトからフォルダ名を変更していない場合、プロジェクト名と同名のフォルダを指定すればいい
+  - {プロジェクト名}
+
+# 対象外のファイル・フォルダ
+excluded:
+  - Pods
+  - Generated
 ```
+
+<img width="512" alt="image" src="https://i.imgur.com/IlcKmHv.png">
 
 See the SwiftLint documentation for more details.  
 https://github.com/realm/SwiftLint#child--parent-configs-remote
