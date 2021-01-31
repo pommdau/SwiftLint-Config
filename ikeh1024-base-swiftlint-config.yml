@@ -172,16 +172,6 @@ opt_in_rules:
   - xct_specific_matcher
   - yoda_condition
 
-# 対象のファイル・フォルダ
-# デフォルトからフォルダ名を変更していない場合、プロジェクト名と同名のフォルダを指定すればいい
-included:
-  - ARKit_LIFULL_MISSION
-
-# 対象外のファイル・フォルダ
-excluded:
-  - Pods
-  - Generated
-
 line_length:
   warning: 300
   error: 500
