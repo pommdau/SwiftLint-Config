@@ -21,7 +21,7 @@ swiftlint version
 Using a remote reference, your `.swiftlint.yml` could look like this:
 
 ```yaml
-parent_config: https://raw.githubusercontent.com/uhooi/SwiftLint-Config/v1.0.0/uhooi-base-swiftlint-config.yml
+parent_config: https://raw.githubusercontent.com/uhooi/SwiftLint-Config/v1.0.0/ikeh1024-base-swiftlint-config.yml
 ```
 
 See the SwiftLint documentation for more details.  
