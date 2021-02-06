@@ -164,7 +164,7 @@ opt_in_rules:
   - unneeded_parentheses_in_closure_argument
   - untyped_error_in_catch
   - unused_import
-  - unused_private_declaration
+  - unused_declaration
   - vertical_parameter_alignment_on_call
   #- vertical_whitespace_between_cases # Switch文のケース間に空白行を設けたくないこともあるため
   #- vertical_whitespace_closing_braces # 中括弧を閉じる前に空白行を設けたいことがあるため
