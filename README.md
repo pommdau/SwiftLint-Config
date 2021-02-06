@@ -35,7 +35,7 @@ Using a remote reference, your `.swiftlint.yml` could look like this:
 
 ```yaml
 # リモートに置かれた.ymlファイルの設定を使用する
-parent_config: https://raw.githubusercontent.com/pommdau/SwiftLint-Config/v1.0.0/ikeh1024-base-swiftlint-config.yml
+parent_config: https://raw.githubusercontent.com/pommdau/SwiftLint-Config/v1.0.1/ikeh1024-base-swiftlint-config.yml
 
 # 対象のファイル・フォルダ
 included:
