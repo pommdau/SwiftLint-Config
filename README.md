@@ -19,8 +19,14 @@ swiftlint version
 ## Usage
 
 - Create `Run Script` and write aｓ follows
+- M1対応
+  - [SwiftLintの導入・設定方法のまとめ](https://qiita.com/naginx/items/92a647a76df6c3688302)
+  - [Swiftlint can't be found on Apple Silicon xcode](https://stackoverflow.com/questions/65991508/swiftlint-cant-be-found-on-apple-silicon-xcode)
 
 ```sh
+# Adds support for Apple Silicon brew directory
+export PATH="$PATH:/opt/homebrew/bin"
+
 if which swiftlint >/dev/null; then
   swiftlint autocorrect --format
   swiftlint
